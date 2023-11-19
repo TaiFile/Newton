@@ -21,7 +21,6 @@ public class Test : MonoBehaviour
     {
         input = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(input * speed * Time.deltaTime, 0);
-
     }
 
     private void OnCollisionEnter2D(Collision2D other){
