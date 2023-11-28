@@ -5,6 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - Maca
+  - banana
+  - Morango
+  - Abacaxi
+  - "Lim\xE3o"
+  - Pera
+  - Uva
+  - Pessego
+  - Melancia
   layers:
   - Default
   - TransparentFX

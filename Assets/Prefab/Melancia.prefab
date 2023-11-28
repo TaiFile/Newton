@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4293626930836213791}
   - component: {fileID: -3096444794387788983}
   m_Layer: 0
-  m_Name: "Ma\xE7a"
+  m_Name: Melancia
   m_TagString: Maca
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,8 +29,8 @@ Transform:
   m_GameObject: {fileID: 7614602173478860225}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.483, y: 2.547, z: 0}
-  m_LocalScale: {x: 0.058272026, y: 0.068097614, z: 0.068097614}
+  m_LocalPosition: {x: -5.026, y: 2.9332, z: 0}
+  m_LocalScale: {x: 0.24622808, y: 0.23410863, z: 0.068097614}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 2043039ddef924848b83b17a42c267d2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2ba4c7a26ad30ec4299dcd32302b6fb9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -119,9 +119,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.036649287, y: 0.1156425}
   serializedVersion: 2
-  m_Radius: 8.06
+  m_Radius: 3.9288685
 --- !u!50 &4293626930836213791
 Rigidbody2D:
   serializedVersion: 4
