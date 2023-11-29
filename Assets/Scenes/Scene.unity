@@ -217,7 +217,6 @@ GameObject:
   m_Component:
   - component: {fileID: 299385373}
   - component: {fileID: 299385372}
-  - component: {fileID: 299385374}
   m_Layer: 0
   m_Name: FrutaSpawner
   m_TagString: Untagged
@@ -239,6 +238,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maca: {fileID: 7614602173478860225, guid: fc82e61f3d0cc8044a35fc577eebd524, type: 3}
   abacaxi: {fileID: 7614602173478860225, guid: aca12b05644a2cc4d9bc4c177bca1188, type: 3}
+  Melancia: {fileID: 0}
+  Uva: {fileID: 0}
+  Morango: {fileID: 0}
+  Pera: {fileID: 0}
+  Pessego: {fileID: 0}
+  Limao: {fileID: 0}
+  Banana: {fileID: 0}
   taxaDeSpawn: 1
   speed: 3001
 --- !u!4 &299385373
@@ -256,22 +262,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &299385374
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 299385370}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9ba55c2f0a618a4599191acbaa5812c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maca: {fileID: 0}
-  abacaxi: {fileID: 0}
-  taxaDeSpawn: 0
-  speed: 0
 --- !u!1 &751509764
 GameObject:
   m_ObjectHideFlags: 0
