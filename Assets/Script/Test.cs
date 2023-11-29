@@ -28,6 +28,38 @@ public class Test : MonoBehaviour
             Debug.Log("Pegou maca");
             Destroy(other.gameObject);
         }
+        else if(other.gameObject.CompareTag("Abacaxi")){
+            Debug.Log("Pegou abacaxi");
+            Destroy(other.gameObject);
+        }
+        else if(other.gameObject.CompareTag("Melancia")){
+            Debug.Log("Pegou melancia");
+            Destroy(other.gameObject);
+        }
+        else if(other.gameObject.CompareTag("Pessego")){
+            Debug.Log("Pegou pessego");
+            Destroy(other.gameObject);
+        }
+        else if(other.gameObject.CompareTag("Morango")){
+            Debug.Log("Pegou morango");
+            Destroy(other.gameObject);
+        }
+        else if(other.gameObject.CompareTag("Limao")){
+            Debug.Log("Pegou Limao");
+            Destroy(other.gameObject);
+        }
+        else if(other.gameObject.CompareTag("Uva")){
+            Debug.Log("Pegou mUva");
+            Destroy(other.gameObject);
+        }
+        else if(other.gameObject.CompareTag("Pera")){
+            Debug.Log("Pegou Pera");
+            Destroy(other.gameObject);
+        }
+        else if(other.gameObject.CompareTag("banana")){
+            Debug.Log("Pegou Banana");
+            Destroy(other.gameObject);
+        }
     }
 }
 

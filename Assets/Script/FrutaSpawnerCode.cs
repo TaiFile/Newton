@@ -5,7 +5,17 @@ using UnityEngine.Windows;
 
 public class MacaSpawnerCode : MonoBehaviour
 {
-    public GameObject fruta;
+    public GameObject maca;
+    public GameObject abacaxi;
+    public GameObject Melancia;
+    public GameObject Uva;
+    public GameObject Morango;
+    public GameObject Pera;
+    public GameObject Pessego;
+    public GameObject Limao;
+    public GameObject Banana;
+
+
     
     public float taxaDeSpawn;
     private float timer;
@@ -30,8 +40,43 @@ public class MacaSpawnerCode : MonoBehaviour
 
     }
 
+    GameObject FrutaRandow()
+    {
+        GameObject fruta_escolhida;
+        int num_randon = Random.Range(0,8);
+
+        if(num_randon == 0){
+            fruta_escolhida = maca;
+        }
+        else if(num_randon == 1){
+            fruta_escolhida = abacaxi;
+        }
+        else if(num_randon == 2){
+            fruta_escolhida = Melancia;
+        }
+        else if(num_randon == 3){
+            fruta_escolhida = Uva;
+        }
+        else if(num_randon == 4){
+            fruta_escolhida = Pessego;
+        }
+        else if(num_randon == 5){
+            fruta_escolhida = Banana;
+        }
+        else if(num_randon == 6){
+            fruta_escolhida = Limao;
+        }
+        else if(num_randon == 7){
+            fruta_escolhida = Morango;
+        }
+        else{
+            fruta_escolhida = Pera;
+        }
+        return fruta_escolhida;
+    }
     void spawnFruta()
     {
-        Instantiate(fruta, transform.position, transform.rotation);
+        Instantiate(FrutaRandow(), transform.position, transform.rotation);
     }
+
 }
