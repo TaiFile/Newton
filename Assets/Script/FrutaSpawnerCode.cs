@@ -23,7 +23,7 @@ public class MacaSpawnerCode : MonoBehaviour
 
     void Start()
     {
-        ;// transform.position = new Vector2(Random.Range(-9, 11), 7);
+        // transform.position = new Vector2(Random.Range(-9, 11), 7);
     }
     void Update()
     {

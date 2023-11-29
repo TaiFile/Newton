@@ -217,7 +217,6 @@ GameObject:
   m_Component:
   - component: {fileID: 299385373}
   - component: {fileID: 299385372}
-  - component: {fileID: 299385374}
   m_Layer: 0
   m_Name: FrutaSpawner
   m_TagString: Untagged
@@ -239,6 +238,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maca: {fileID: 7614602173478860225, guid: fc82e61f3d0cc8044a35fc577eebd524, type: 3}
   abacaxi: {fileID: 7614602173478860225, guid: aca12b05644a2cc4d9bc4c177bca1188, type: 3}
+  Melancia: {fileID: 7614602173478860225, guid: e871b813516fe37408829c9b9b3c1414, type: 3}
+  Uva: {fileID: 7614602173478860225, guid: 0031619b5d3b51d4c8ae36a8da57073b, type: 3}
+  Morango: {fileID: 7614602173478860225, guid: 5e3f500eb26315547ae1ca9bfa3f0c93, type: 3}
+  Pera: {fileID: 7614602173478860225, guid: cd4826e955b6bd6419b93dfb81b1e509, type: 3}
+  Pessego: {fileID: 7614602173478860225, guid: d33e42557cd2b6e43869d142329c5348, type: 3}
+  Limao: {fileID: 7614602173478860225, guid: 07010613977def945b5ab7f52cf89cd4, type: 3}
+  Banana: {fileID: 7614602173478860225, guid: 1b60b1d22b0a4eb48af70f8c01e74b45, type: 3}
   taxaDeSpawn: 1
   speed: 3001
 --- !u!4 &299385373
@@ -256,22 +262,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &299385374
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 299385370}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9ba55c2f0a618a4599191acbaa5812c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maca: {fileID: 0}
-  abacaxi: {fileID: 0}
-  taxaDeSpawn: 0
-  speed: 0
 --- !u!1 &751509764
 GameObject:
   m_ObjectHideFlags: 0

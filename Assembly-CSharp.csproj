@@ -67,6 +67,7 @@
     <Compile Include="Assets\Script\pilha.cs" />
     <Compile Include="Assets\Script\Test.cs" />
     <Compile Include="Assets\Script\FrutaScript.cs" />
+    <Compile Include="Assets\Spawn.cs" />
     <Compile Include="Assets\Script\FrutaSpawnerCode.cs" />
     <Compile Include="Assets\Script\TILevelManagment.cs" />
     <Compile Include="Assets\Script\NewtonScript.cs" />

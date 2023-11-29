@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
+/*
+
 public class Test : MonoBehaviour
 {
     float input;
@@ -62,4 +64,5 @@ public class Test : MonoBehaviour
         }
     }
 }
+*/
 

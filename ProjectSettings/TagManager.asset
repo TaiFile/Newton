@@ -8,11 +8,11 @@ TagManager:
   - banana
   - Morango
   - Abacaxi
-  - "Lim\xE3o"
   - Pera
   - Uva
   - Pessego
   - Melancia
+  - Limao
   layers:
   - Default
   - TransparentFX
