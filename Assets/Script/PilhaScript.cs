@@ -54,10 +54,6 @@ public class Pilha : MonoBehaviour
         {
             
         }
-        else if(Cheia())
-        {
-            
-        }
         else
         {
 
