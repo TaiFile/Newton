@@ -79,8 +79,4 @@ Logs/shadercompiler-UnityShaderCompiler.exe0.log
 *.meta
 *.meta
 *.meta
-Assets/Scenes/MainScene.unity.meta
-Assets/Scenes/Scene.unity
-Logs/shadercompiler-UnityShaderCompiler.exe0.log
-UserSettings/EditorUserSettings.asset
-UserSettings/Layouts/default-2022.dwlt
+
