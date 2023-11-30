@@ -13,6 +13,18 @@ TagManager:
   - Pessego
   - Melancia
   - Limao
+  - TADpilha
+  - MacaEs
+  - bananaES
+  - MorangoEs
+  - AbacaxiEs
+  - PeraEs
+  - UvaEs
+  - PessegoEs
+  - MelanciaEs
+  - LimaoEs
+  - pilhaAtual
+  - pilhaPronta
   layers:
   - Default
   - TransparentFX
@@ -49,4 +61,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Newton
+    uniqueID: 4207349555
+    locked: 0
+  - name: UI
+    uniqueID: 249237501
     locked: 0

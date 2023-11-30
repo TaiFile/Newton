@@ -2,14 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
-class Pilha
+using static UnityEngine.RuleTile.TilingRuleOutput;
+public class Pilha : MonoBehaviour
 {
     private class Node
     {
-        public int Info { get; set; }
+        public GameObject Info { get; set; }
         public Node Next { get; set; }
     }
 
+    public int tamanhoMaximo;
+    public float espacamento = 1.5f;
+
+    private int countNode;
+    private float alturaPilha;
     private Node topo;
 
     // Construtor e destrutor
@@ -25,6 +31,7 @@ class Pilha
         {
             aux = topo;
             topo = topo.Next;
+            aux = null;
             // No C#, o garbage collector cuida da liberação de memória, não é necessário chamar delete
         }
     }
@@ -35,27 +42,42 @@ class Pilha
         return topo == null;
     }
 
-    public void Empilha(int ElementoNovo, out bool DeuCerto)
+    public bool Cheia()
+    {
+        return countNode == tamanhoMaximo;
+    }
+
+    public void Empilha(GameObject ElementoNovo)
     {
         Node novoNode = new Node();
         if (novoNode == null) // cheia
         {
-            DeuCerto = false;
+            
+        }
+        else if(Cheia())
+        {
+            
         }
         else
         {
+
             novoNode.Info = ElementoNovo;
             novoNode.Next = topo;
+
+            Vector3 posicaoNovaFruta = transform.position + new Vector3(0, (countNode*espacamento) + ElementoNovo.transform.localScale.y, 0);
+            Instantiate(ElementoNovo, posicaoNovaFruta, transform.rotation);
+            countNode++;
+
             topo = novoNode;
-            DeuCerto = true;
+            
         }
     }
 
-    public void Desempilha(out int x, out bool DeuCerto)
+    public void Desempilha(out GameObject x, bool DeuCerto)
     {
         if (Vazia())
         {
-            x = 0; // Valor padrão se a pilha estiver vazia
+            x = null;// Valor padrão se a pilha estiver vazia
             DeuCerto = false;
         }
         else
@@ -63,6 +85,10 @@ class Pilha
             Node eraseNode = topo;
             x = topo.Info;
             topo = topo.Next;
+            Destroy(eraseNode.Info);
+            countNode--;
+
+
             // No C#, o garbage collector cuida da liberação de memória, não é necessário chamar delete
             DeuCerto = true;
         }
