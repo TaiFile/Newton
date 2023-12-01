@@ -25,6 +25,7 @@ TagManager:
   - LimaoEs
   - pilhaAtual
   - pilhaPronta
+  - spawner
   layers:
   - Default
   - TransparentFX

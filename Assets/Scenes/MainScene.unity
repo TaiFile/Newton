@@ -321,7 +321,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tamanhoMaximo: 8
-  espacamento: 1
+  alturaNode: 1
 --- !u!4 &213441885
 Transform:
   m_ObjectHideFlags: 0
@@ -331,7 +331,7 @@ Transform:
   m_GameObject: {fileID: 213441883}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.36, y: -2.83, z: -0.032057762}
+  m_LocalPosition: {x: 13.4, y: -2.62, z: -0.032057762}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -349,7 +349,7 @@ GameObject:
   - component: {fileID: 299385372}
   m_Layer: 0
   m_Name: FrutaSpawner
-  m_TagString: Untagged
+  m_TagString: spawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -375,8 +375,12 @@ MonoBehaviour:
   Pessego: {fileID: 7614602173478860225, guid: d33e42557cd2b6e43869d142329c5348, type: 3}
   Limao: {fileID: 7614602173478860225, guid: 07010613977def945b5ab7f52cf89cd4, type: 3}
   Banana: {fileID: 7614602173478860225, guid: 1b60b1d22b0a4eb48af70f8c01e74b45, type: 3}
+  pilhasIguais: 0
+  soltouMaca: 0
   taxaDeSpawn: 1
   speed: 3001
+  maxEsq: -8
+  maxDir: 11
 --- !u!4 &299385373
 Transform:
   m_ObjectHideFlags: 0
@@ -777,8 +781,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad73ab5024096f14984c06f767c2ae83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tamanhoMaximo: 8
-  espacamento: 1
+  tamanhoMaximo: 3
+  alturaNode: 1
 --- !u!4 &856040663
 Transform:
   m_ObjectHideFlags: 0
@@ -788,7 +792,7 @@ Transform:
   m_GameObject: {fileID: 856040660}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.75, y: -3.07, z: -0.032057762}
+  m_LocalPosition: {x: -13.75, y: -2.57, z: -0.032057762}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -805,6 +809,7 @@ GameObject:
   - component: {fileID: 883762668}
   - component: {fileID: 883762667}
   - component: {fileID: 883762666}
+  - component: {fileID: 883762669}
   m_Layer: 0
   m_Name: "Destr\xF3i"
   m_TagString: Untagged
@@ -885,8 +890,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -87617741
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e138bbee4d2600a4281ef5075b51488c, type: 3}
   m_Color: {r: 0.52156866, g: 0.98039216, b: 0.627451, a: 1}
@@ -914,6 +919,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &883762669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883762665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddc5fe948aaf50743b79f412314942d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &942980739
 GameObject:
   m_ObjectHideFlags: 0
@@ -1178,6 +1195,7 @@ GameObject:
   - component: {fileID: 1933309996}
   - component: {fileID: 1933309995}
   - component: {fileID: 1933309994}
+  - component: {fileID: 1933309997}
   m_Layer: 0
   m_Name: Compare
   m_TagString: Untagged
@@ -1258,8 +1276,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 249237501
-  m_SortingLayer: 2
+  m_SortingLayerID: -87617741
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f92cfaeabdda2ce41945608ee817209c, type: 3}
   m_Color: {r: 0.52156866, g: 0.98039216, b: 0.627451, a: 1}
@@ -1287,6 +1305,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1933309997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1933309993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b942e378d25ea74abde9e6666496f9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

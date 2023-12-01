@@ -19,14 +19,14 @@ public class PilhaProntaScript : MonoBehaviour
     void Start()
     {
         p = GetComponent<Pilha>();
-
-        p.Empilha(um);
-        p.Empilha(dois);
-        p.Empilha(tres);
-        p.Empilha(quatro);
-        p.Empilha(cinco);
-        p.Empilha(seis);
-        p.Empilha(sete);
-        p.Empilha(oito);
+        bool ok;
+        p.Empilha(um, out ok);
+        p.Empilha(dois, out ok);
+        p.Empilha(tres, out ok);
+        p.Empilha(quatro, out ok);
+        p.Empilha(cinco, out ok);
+        p.Empilha(seis, out ok);
+        p.Empilha(sete, out ok);    
+        p.Empilha(oito, out ok);
     }
 }

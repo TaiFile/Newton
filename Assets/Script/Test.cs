@@ -32,56 +32,60 @@ public class Test:MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other){
         
         Pilha p = GameObject.FindGameObjectWithTag("TADpilha").GetComponent<Pilha>();
-
+        bool ok;
         if (!p.Cheia())
         {
             if (other.gameObject.CompareTag("Maca"))
             {
                 Debug.Log("Pegou maca");
-                p.Empilha(MacaEs);
+                p.Empilha(MacaEs, out ok);
             }
             else if (other.gameObject.CompareTag("Abacaxi"))
             {
                 Debug.Log("Pegou abacaxi");
-                p.Empilha(AbacaxiEs);
+                p.Empilha(AbacaxiEs, out ok);
             }
             else if (other.gameObject.CompareTag("Melancia"))
             {
                 Debug.Log("Pegou melancia");
-                p.Empilha(MelanciaEs);
+                p.Empilha(MelanciaEs, out ok);
             }
             else if (other.gameObject.CompareTag("Pessego"))
             {
                 Debug.Log("Pegou pessego");
-                p.Empilha(PessegoEs);
+                p.Empilha(PessegoEs, out ok);
             }
             else if (other.gameObject.CompareTag("Morango"))
             {
                 Debug.Log("Pegou morango");
-                p.Empilha(MorangoES);
+                p.Empilha(MorangoES, out ok);
             }
             else if (other.gameObject.CompareTag("Limao"))
             {
                 Debug.Log("Pegou Limao");
-                p.Empilha(LimaoEs);
+                p.Empilha(LimaoEs, out ok);
             }
             else if (other.gameObject.CompareTag("Uva"))
             {
                 Debug.Log("Pegou Uva");
-                p.Empilha(UvaEs);
+                p.Empilha(UvaEs, out ok);
             }
             else if (other.gameObject.CompareTag("Pera"))
             {
                 Debug.Log("Pegou Pera");
-                p.Empilha(PeraEs);
+                p.Empilha(PeraEs, out ok);
             }
             else if (other.gameObject.CompareTag("banana"))
             {
                 Debug.Log("Pegou Banana");
-                p.Empilha(BananaEs);
+                p.Empilha(BananaEs, out ok);
             }
 
             Destroy(other.gameObject);
+        }
+        else
+        {
+            Debug.Log("PilhaCheia");
         }
     }
 }

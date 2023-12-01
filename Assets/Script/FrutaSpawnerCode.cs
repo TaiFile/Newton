@@ -16,14 +16,18 @@ public class MacaSpawnerCode : MonoBehaviour
     public GameObject Banana;
 
 
-    
-    public float taxaDeSpawn;
+    public bool pilhasIguais = false;
+    public bool soltouMaca = false;
+
+    public float taxaDeSpawn = 1;
     private float timer;
-    public float speed;
+    public float speed = 3001;
+    public float maxEsq = -8;
+    public float maxDir = 11;
 
     void Start()
     {
-        // transform.position = new Vector2(Random.Range(-9, 11), 7);
+        
     }
     void Update()
     {
@@ -33,8 +37,18 @@ public class MacaSpawnerCode : MonoBehaviour
         }
         else
         {
-            transform.SetPositionAndRotation(new Vector3(Random.Range(-8, 11), transform.position.y, transform.position.z), transform.rotation);
-            spawnFruta();
+            transform.SetPositionAndRotation(new Vector3(Random.Range(maxEsq, maxDir), transform.position.y, transform.position.z), transform.rotation);
+            
+            if(pilhasIguais) 
+            {
+                spawnFruta(maca);
+                pilhasIguais = false;
+                soltouMaca = true;
+            }
+            else if (!soltouMaca)
+            {
+                spawnFruta(FrutaRandow());
+            }
             timer = 0;
         }
 
@@ -74,9 +88,9 @@ public class MacaSpawnerCode : MonoBehaviour
         }
         return fruta_escolhida;
     }
-    void spawnFruta()
+    void spawnFruta(GameObject fruta)
     {
-        Instantiate(FrutaRandow(), transform.position, transform.rotation);
+        Instantiate(fruta, transform.position, transform.rotation);
     }
 
 }
