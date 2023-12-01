@@ -58,13 +58,14 @@ public class Pilha : MonoBehaviour
         }
         else
         {
-            novoNode.Info = ElementoNovo;
-            novoNode.Next = topo;
-
             Vector3 posicaoNovaFruta = transform.position + new Vector3(0, countNode*alturaNode, 0);
             Instantiate(ElementoNovo, posicaoNovaFruta, transform.rotation);
-            countNode++;
+            
+            novoNode.Info = ElementoNovo;
+            novoNode.Next = topo;
             topo = novoNode;
+            
+            countNode++;
             ok = true;
         }
     }
@@ -82,8 +83,8 @@ public class Pilha : MonoBehaviour
             Node eraseNode = topo;
             x = topo.Info;
             topo = topo.Next;
-            //eraseNode.Info.GetComponent<SpriteRenderer>().enabled = false;
             Destroy(eraseNode.Info);
+            
             eraseNode = null;
             countNode--;              // No C#, o garbage collector cuida da liberação de memória, não é necessário chamar delete
             DeuCerto = true;
@@ -112,15 +113,12 @@ public class Pilha : MonoBehaviour
 
     public void DestroiPilha()
     {
-        //Node aux;
+        
         GameObject x; bool ok;
         while (!Vazia())
         {
             Desempilha(out x, out ok);
-            //aux = topo;
-            //topo = topo.Next;
-            //Destroy(aux.Info);
-            //countNode--;
+            
         }
     }
 }

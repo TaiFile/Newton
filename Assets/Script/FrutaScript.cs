@@ -1,19 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FrutaScript : MonoBehaviour
 {
     public float deadzone;
     public Rigidbody2D Rigidbody;
-    public float AceleracaoGravidade = 1;
-    private int frutasContadas;
-    private Pilha pilhaAtual;
+    public float TaxaDeAceleracao = 0.25f;
+    public float GravCenaFinalMaca;
+    private Pilha pilha;
 
     // Start is called before the first frame update
     void Start()
     {
-        //Rigidbody.gravityScale = AceleracaoGravidade * (frutasContadas > 0 ? frutasContadas : 1);
+        pilha = GameObject.FindGameObjectWithTag("TADpilha").GetComponent<Pilha>();
+        Rigidbody = GetComponent<Rigidbody2D>();
+
+        Scene cenaAtiva = SceneManager.GetActiveScene();
+        if (cenaAtiva.name == "CenaFinalMaca")
+        {
+            Rigidbody.gravityScale = GravCenaFinalMaca;
+        }
     }
 
     // Update is called once per frame
@@ -23,14 +31,9 @@ public class FrutaScript : MonoBehaviour
         {
             Destroy(gameObject);
         }
-    }
 
-    void AddFrutasContadas(int valor)
-    {
-        frutasContadas += valor;
-    }
-    void SubFrutasContadas(int valor)
-    {
-        frutasContadas -= valor;
+        Rigidbody.gravityScale = pilha.GetCountNode() + TaxaDeAceleracao;
+
+
     }
 }

@@ -162,3 +162,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deadzone: -8
+  Rigidbody: {fileID: 4293626930836213791}
+  TaxaDeaceleracao: 1
+  GravCenaFinalMaca: 0
