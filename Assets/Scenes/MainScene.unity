@@ -781,7 +781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad73ab5024096f14984c06f767c2ae83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tamanhoMaximo: 3
+  tamanhoMaximo: 5
   alturaNode: 1
 --- !u!4 &856040663
 Transform:

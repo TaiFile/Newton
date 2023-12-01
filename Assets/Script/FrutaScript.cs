@@ -6,13 +6,14 @@ public class FrutaScript : MonoBehaviour
 {
     public float deadzone;
     public Rigidbody2D Rigidbody;
-    public float gravidade;
-    
+    public float AceleracaoGravidade = 1;
+    private int frutasContadas;
+    private Pilha pilhaAtual;
 
     // Start is called before the first frame update
     void Start()
     {
-        Rigidbody.gravityScale = gravidade;    
+        //Rigidbody.gravityScale = AceleracaoGravidade * (frutasContadas > 0 ? frutasContadas : 1);
     }
 
     // Update is called once per frame
@@ -22,5 +23,14 @@ public class FrutaScript : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    void AddFrutasContadas(int valor)
+    {
+        frutasContadas += valor;
+    }
+    void SubFrutasContadas(int valor)
+    {
+        frutasContadas -= valor;
     }
 }

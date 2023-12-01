@@ -82,8 +82,8 @@ public class Pilha : MonoBehaviour
             Node eraseNode = topo;
             x = topo.Info;
             topo = topo.Next;
-            eraseNode.Info.GetComponent<SpriteRenderer>().enabled = false;
-            //Destroy(eraseNode.Info);
+            //eraseNode.Info.GetComponent<SpriteRenderer>().enabled = false;
+            Destroy(eraseNode.Info);
             eraseNode = null;
             countNode--;              // No C#, o garbage collector cuida da liberação de memória, não é necessário chamar delete
             DeuCerto = true;
