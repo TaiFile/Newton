@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8351871479036714676}
   - component: {fileID: 2310519781509748033}
   m_Layer: 0
-  m_Name: Morango 1
+  m_Name: MorangoEs
   m_TagString: MorangoEs
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

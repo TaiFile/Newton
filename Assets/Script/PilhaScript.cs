@@ -14,22 +14,11 @@ public class Pilha : MonoBehaviour
     public float alturaNode = 2;
     private int countNode;
     private Node topo;
-    // Construtor e destrutor
+
+    // Construtor
     public Pilha()
     {
         topo = null;
-    }
-
-    ~Pilha()
-    {
-        Node aux;
-        while (topo != null)
-        {
-            aux = topo;
-            topo = topo.Next;
-            aux = null;
-            // No C#, o garbage collector cuida da liberação de memória, não é necessário chamar delete
-        }
     }
 
     // Métodos primitivos
@@ -41,7 +30,7 @@ public class Pilha : MonoBehaviour
 
     public bool Vazia()
     {
-        return topo == null || countNode == 0;
+        return topo == null;
     }
 
     public bool Cheia()
@@ -52,9 +41,12 @@ public class Pilha : MonoBehaviour
     public void Empilha(GameObject ElementoNovo, out bool ok)
     {
         Node novoNode = new Node();
-        if (Cheia()) // cheia
+        if (Cheia())
         {
             ok = false;
+
+            // Print de verificação em console
+            Debug.Log("Pilha Cheia!!!");
         }
         else
         {
@@ -67,27 +59,38 @@ public class Pilha : MonoBehaviour
             
             countNode++;
             ok = true;
+
+            // Print de verificação em console
+            Debug.Log("Empilhou Elemento!!!");
         }
     }
 
     public void Desempilha(out GameObject x, out bool DeuCerto)
     {
+        Node eraseNode;
         if (Vazia())
         {
             x = null;                 // Valor padrão se a pilha estiver vazia
             DeuCerto = false;
-            Debug.Log("tentou desempilhar vazia");
+
+            // Print de verificação em console
+            Debug.Log("Pilha Vazia!!!");
         }
         else
         {
-            Node eraseNode = topo;
             x = topo.Info;
-            topo = topo.Next;
-            Destroy(eraseNode.Info);
-            
-            eraseNode = null;
-            countNode--;              // No C#, o garbage collector cuida da liberação de memória, não é necessário chamar delete
+            eraseNode = topo;
+            topo = eraseNode.Next;
+            // Em C#, o garbage collector cuida da liberação de memória, não é necessário usar delete em eraseNode
+
+            GameObject frutaDestruida = GameObject.Find(eraseNode.Info.name + "(Clone)");
+            Destroy(frutaDestruida);
+        
+            countNode--;
             DeuCerto = true;
+
+            // Print de verificação em console
+            Debug.Log("Desempilhou!!!");
         }
     }
 

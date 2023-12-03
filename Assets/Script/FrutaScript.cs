@@ -34,6 +34,5 @@ public class FrutaScript : MonoBehaviour
 
         Rigidbody.gravityScale = pilha.GetCountNode() + TaxaDeAceleracao;
 
-
     }
 }
