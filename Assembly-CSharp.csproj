@@ -68,6 +68,7 @@
     <Compile Include="Assets\Script\CenaFinalSpawner.cs" />
     <Compile Include="Assets\Script\Test.cs" />
     <Compile Include="Assets\Script\FrutaScript.cs" />
+    <Compile Include="Assets\Script\SpawnerCenaFinal.cs" />
     <Compile Include="Assets\Script\PilhaScript.cs" />
     <Compile Include="Assets\Script\BotaoCompareScript.cs" />
     <Compile Include="Assets\Script\FrutaSpawnerCode.cs" />

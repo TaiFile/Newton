@@ -29,8 +29,8 @@ Transform:
   m_GameObject: {fileID: 7614602173478860225}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.497, y: 2.461, z: 0}
-  m_LocalScale: {x: 0.39819437, y: 0.48183155, z: 0.068097614}
+  m_LocalPosition: {x: -5.478, y: 2.563, z: 0}
+  m_LocalScale: {x: 0.5565563, y: 0.67345595, z: 0.095180035}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -162,3 +162,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deadzone: -8
+  Rigidbody: {fileID: 0}
+  TaxaDeAceleracao: 0.25
+  GravCenaFinalMaca: 0
