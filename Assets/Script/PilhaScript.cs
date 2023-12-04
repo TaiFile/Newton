@@ -51,12 +51,11 @@ public class Pilha : MonoBehaviour
         else
         {
             Vector3 posicaoNovaFruta = transform.position + new Vector3(0, countNode*alturaNode, 0);
-            Instantiate(ElementoNovo, posicaoNovaFruta, transform.rotation);
+            GameObject ObjEmpilhado = Instantiate(ElementoNovo, posicaoNovaFruta, transform.rotation);
             
-            novoNode.Info = ElementoNovo;
+            novoNode.Info = ObjEmpilhado;
             novoNode.Next = topo;
             topo = novoNode;
-            
             countNode++;
             ok = true;
 
@@ -82,9 +81,8 @@ public class Pilha : MonoBehaviour
             eraseNode = topo;
             topo = eraseNode.Next;
             // Em C#, o garbage collector cuida da liberação de memória, não é necessário usar delete em eraseNode
-
-            GameObject frutaDestruida = GameObject.Find(eraseNode.Info.name + "(Clone)");
-            Destroy(frutaDestruida);
+            //GameObject frutaDestruida = GameObject.Find(eraseNode.Info.name + "(Clone)");
+            Destroy(eraseNode.Info);
         
             countNode--;
             DeuCerto = true;

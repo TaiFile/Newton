@@ -11,13 +11,13 @@ public class DestroiPIlhaScript : MonoBehaviour
     {
         pilha = GameObject.FindGameObjectWithTag("TADpilha").GetComponent<Pilha>();
         
-        GameObject x; bool ok;
+        //GameObject x; bool ok;
 
         if (other.gameObject.CompareTag("Player"))
         {
             Debug.Log("Acionou Destroi");
             
-            pilha.Desempilha(out x, out ok);
+            pilha.DestroiPilha();
         }
     }
 }
