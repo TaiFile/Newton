@@ -377,7 +377,7 @@ MonoBehaviour:
   Banana: {fileID: 7614602173478860225, guid: 1b60b1d22b0a4eb48af70f8c01e74b45, type: 3}
   pilhasIguais: 0
   soltouMaca: 0
-  taxaDeSpawn: 1
+  delayDeSpawn: 3
   speed: 3001
   maxEsq: -8
   maxDir: 11
