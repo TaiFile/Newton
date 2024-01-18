@@ -19,7 +19,7 @@ public class MacaSpawnerCode : MonoBehaviour
     public bool pilhasIguais = false;
     public bool soltouMaca = false;
 
-    public float taxaDeSpawn = 1;
+    public float delayDeSpawn = 3;
     private float timer;
     public float speed = 3001;
     public float maxEsq = -8;
@@ -31,7 +31,7 @@ public class MacaSpawnerCode : MonoBehaviour
     }
     void Update()
     {
-        if (timer < taxaDeSpawn)
+        if (timer < delayDeSpawn)
         {
             timer += Time.deltaTime;
         }
