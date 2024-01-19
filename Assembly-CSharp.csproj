@@ -71,6 +71,8 @@
     <Compile Include="Assets\Script\FrutaScript.cs" />
     <Compile Include="Assets\Script\MusicControl.cs" />
     <Compile Include="Assets\Script\MenuPrincipal.cs" />
+    <Compile Include="Assets\NewBehaviourScript.cs" />
+    <Compile Include="Assets\Script\MenuPause.cs" />
     <Compile Include="Assets\Script\PilhaScript.cs" />
     <Compile Include="Assets\Script\BotaoCompareScript.cs" />
     <Compile Include="Assets\Script\FrutaSpawnerCode.cs" />
