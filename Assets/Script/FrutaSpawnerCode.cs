@@ -21,7 +21,7 @@ public class MacaSpawnerCode : MonoBehaviour
 
     public float delayDeSpawn = 3;
     private float timer;
-    public float speed = 3001;
+    public float speed = 3010;
     public float maxEsq = -8;
     public float maxDir = 11;
 
