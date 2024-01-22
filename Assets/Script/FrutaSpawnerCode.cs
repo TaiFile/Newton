@@ -17,9 +17,7 @@ public class MacaSpawnerCode : MonoBehaviour
 
 
     public bool pilhasIguais = false;
-    public bool soltouMaca = false;
-
-    public float delayDeSpawn = 3;
+    public float delayDeSpawn = 1;
     private float timer;
     public float speed = 3010;
     public float maxEsq = -8;
@@ -38,17 +36,7 @@ public class MacaSpawnerCode : MonoBehaviour
         else
         {
             transform.SetPositionAndRotation(new Vector3(Random.Range(maxEsq, maxDir), transform.position.y, transform.position.z), transform.rotation);
-            
-            if(pilhasIguais) 
-            {
-                spawnFruta(maca);
-                pilhasIguais = false;
-                soltouMaca = true;
-            }
-            else if (!soltouMaca)
-            {
-                spawnFruta(FrutaRandow());
-            }
+            spawnFruta(FrutaRandow());
             timer = 0;
         }
 

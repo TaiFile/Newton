@@ -149,7 +149,7 @@ Transform:
   m_GameObject: {fileID: 299385370}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.72, y: 10, z: 0}
+  m_LocalPosition: {x: -0.8, y: 10, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -167,19 +167,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e78db8fe8b391fd489741c732ee46252, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maca: {fileID: 7614602173478860225, guid: fc82e61f3d0cc8044a35fc577eebd524, type: 3}
-  abacaxi: {fileID: 7614602173478860225, guid: aca12b05644a2cc4d9bc4c177bca1188, type: 3}
-  Melancia: {fileID: 7614602173478860225, guid: e871b813516fe37408829c9b9b3c1414, type: 3}
-  Uva: {fileID: 7614602173478860225, guid: 0031619b5d3b51d4c8ae36a8da57073b, type: 3}
-  Morango: {fileID: 7614602173478860225, guid: 5e3f500eb26315547ae1ca9bfa3f0c93, type: 3}
-  Pera: {fileID: 7614602173478860225, guid: cd4826e955b6bd6419b93dfb81b1e509, type: 3}
-  Pessego: {fileID: 7614602173478860225, guid: d33e42557cd2b6e43869d142329c5348, type: 3}
-  Limao: {fileID: 7614602173478860225, guid: 07010613977def945b5ab7f52cf89cd4, type: 3}
-  Banana: {fileID: 7614602173478860225, guid: 1b60b1d22b0a4eb48af70f8c01e74b45, type: 3}
-  taxaDeSpawn: 1
-  speed: 3001
-  maxEsq: -8
-  maxDir: 11
+  maca1: {fileID: 7614602173478860225, guid: c37e45770cfb9874abf6227b988c51b8, type: 3}
+  abacaxi1: {fileID: 7614602173478860225, guid: 240adc1f1f0868c4890b0715198460c0, type: 3}
+  Melancia1: {fileID: 7614602173478860225, guid: dd223a99c176c9c498e678c7a09077fc, type: 3}
+  Uva1: {fileID: 7614602173478860225, guid: 0e2c9831e48524e439b71220d9ce1a50, type: 3}
+  Morango1: {fileID: 7614602173478860225, guid: 20f9ed93d1530be49b124224950df8be, type: 3}
+  Pera1: {fileID: 7614602173478860225, guid: 52de6953dae7bfe49a53cfec0bf0469b, type: 3}
+  Pessego1: {fileID: 7614602173478860225, guid: 79c594664decd7e49896ccec6f232351, type: 3}
+  Limao1: {fileID: 7614602173478860225, guid: 9f94ed45e8e11ab44941639927b4b753, type: 3}
+  Banana1: {fileID: 7614602173478860225, guid: 389afa94b23908f4fb015d2564de5af7, type: 3}
+  cf_taxaDeSpawn: 1
+  cf_speed: 3001
+  cf_maxEsq: -8
+  cf_maxDir: 11
 --- !u!1 &751509764
 GameObject:
   m_ObjectHideFlags: 0
@@ -356,7 +356,7 @@ GameObject:
   - component: {fileID: 786368838}
   - component: {fileID: 786368837}
   m_Layer: 0
-  m_Name: Limit (1)
+  m_Name: Limit Dir
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -609,7 +609,7 @@ GameObject:
   - component: {fileID: 1574185437}
   - component: {fileID: 1574185436}
   m_Layer: 0
-  m_Name: Limit
+  m_Name: Limit Esq
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -764,9 +764,9 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 942980742}
-  - {fileID: 751509768}
-  - {fileID: 1574185437}
-  - {fileID: 786368838}
   - {fileID: 299385373}
   - {fileID: 1794238985}
   - {fileID: 1242950109}
+  - {fileID: 751509768}
+  - {fileID: 786368838}
+  - {fileID: 1574185437}

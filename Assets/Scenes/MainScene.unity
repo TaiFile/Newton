@@ -741,8 +741,7 @@ MonoBehaviour:
   Limao: {fileID: 7614602173478860225, guid: 07010613977def945b5ab7f52cf89cd4, type: 3}
   Banana: {fileID: 7614602173478860225, guid: 1b60b1d22b0a4eb48af70f8c01e74b45, type: 3}
   pilhasIguais: 0
-  soltouMaca: 0
-  delayDeSpawn: 3
+  delayDeSpawn: 1
   speed: 3001
   maxEsq: -8
   maxDir: 11
@@ -2176,7 +2175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad73ab5024096f14984c06f767c2ae83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tamanhoMaximo: 1
+  tamanhoMaximo: 3
   alturaNode: 1.5
 --- !u!4 &856040663
 Transform:

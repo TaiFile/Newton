@@ -5,21 +5,21 @@ using UnityEngine.Windows;
 
 public class SpawnerFinal : MonoBehaviour
 {
-    public GameObject maca;
-    public GameObject abacaxi;
-    public GameObject Melancia;
-    public GameObject Uva;
-    public GameObject Morango;
-    public GameObject Pera;
-    public GameObject Pessego;
-    public GameObject Limao;
-    public GameObject Banana;
+    public GameObject maca1;
+    public GameObject abacaxi1;
+    public GameObject Melancia1;
+    public GameObject Uva1;
+    public GameObject Morango1;
+    public GameObject Pera1;
+    public GameObject Pessego1;
+    public GameObject Limao1;
+    public GameObject Banana1;
 
-    public float taxaDeSpawn = 1;
-    private float timer;
-    public float speed = 3001;
-    public float maxEsq = -8;
-    public float maxDir = 11;
+    public float cf_taxaDeSpawn = 1;
+    private float cf_timer;
+    public float cf_speed = 3001;
+    public float cf_maxEsq = -8;
+    public float cf_maxDir = 11;
 
     void Start()
     {
@@ -27,56 +27,56 @@ public class SpawnerFinal : MonoBehaviour
     }
     void Update()
     {
-        if (timer < taxaDeSpawn)
+        if (cf_timer < cf_taxaDeSpawn)
         {
-            timer += Time.deltaTime;
+            cf_timer += Time.deltaTime;
         }
         else
         {
-            transform.SetPositionAndRotation(new Vector3(Random.Range(maxEsq, maxDir), transform.position.y, transform.position.z), transform.rotation);
-            spawnFruta(FrutaRandow());
-            timer = 0;
+            transform.SetPositionAndRotation(new Vector3(Random.Range(cf_maxEsq, cf_maxDir), transform.position.y, transform.position.z), transform.rotation);
+            cf_spawnFruta(cf_FrutaRandow());
+            cf_timer = 0;
         }
 
     }
 
-    GameObject FrutaRandow()
+    GameObject cf_FrutaRandow()
     {
-        GameObject fruta_escolhida;
-        int num_randon = Random.Range(0,8);
+        GameObject cf_fruta_escolhida;
+        int cf_num_randon = Random.Range(0,8);
 
-        if(num_randon == 0){
-            fruta_escolhida = maca;
+        if(cf_num_randon == 0){
+            cf_fruta_escolhida = maca1;
         }
-        else if(num_randon == 1){
-            fruta_escolhida = abacaxi;
+        else if(cf_num_randon == 1){
+            cf_fruta_escolhida = abacaxi1;
         }
-        else if(num_randon == 2){
-            fruta_escolhida = Melancia;
+        else if(cf_num_randon == 2){
+            cf_fruta_escolhida = Melancia1;
         }
-        else if(num_randon == 3){
-            fruta_escolhida = Uva;
+        else if(cf_num_randon == 3){
+            cf_fruta_escolhida = Uva1;
         }
-        else if(num_randon == 4){
-            fruta_escolhida = Pessego;
+        else if(cf_num_randon == 4){
+            cf_fruta_escolhida = Pessego1;
         }
-        else if(num_randon == 5){
-            fruta_escolhida = Banana;
+        else if(cf_num_randon == 5){
+            cf_fruta_escolhida = Banana1;
         }
-        else if(num_randon == 6){
-            fruta_escolhida = Limao;
+        else if(cf_num_randon == 6){
+            cf_fruta_escolhida = Limao1;
         }
-        else if(num_randon == 7){
-            fruta_escolhida = Morango;
+        else if(cf_num_randon == 7){
+            cf_fruta_escolhida = Morango1;
         }
         else{
-            fruta_escolhida = Pera;
+            cf_fruta_escolhida = Pera1;
         }
-        return fruta_escolhida;
+        return cf_fruta_escolhida;
     }
-    void spawnFruta(GameObject fruta)
+    void cf_spawnFruta(GameObject cf_fruta)
     {
-        Instantiate(fruta, transform.position, transform.rotation);
+        Instantiate(cf_fruta, transform.position, transform.rotation);
     }
 
 }
