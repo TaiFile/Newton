@@ -8,7 +8,7 @@ public class FrutaScript : MonoBehaviour
     public float deadzone;
     public Rigidbody2D Rigidbody;
     public float TaxaDeAceleracao = 0.25f;
-    public float GravCenaFinalMaca;
+    public float GravCenaFinal;
     private Pilha pilha;
 
     // Start is called before the first frame update
@@ -16,11 +16,11 @@ public class FrutaScript : MonoBehaviour
     {
         pilha = GameObject.FindGameObjectWithTag("TADpilha").GetComponent<Pilha>();
         Rigidbody = GetComponent<Rigidbody2D>();
-
+        
         Scene cenaAtiva = SceneManager.GetActiveScene();
-        if (cenaAtiva.name == "CenaFinalMaca")
+        if (cenaAtiva.name == "CenaFinal")
         {
-            Rigidbody.gravityScale = GravCenaFinalMaca;
+            Rigidbody.gravityScale = GravCenaFinal;
         }
     }
 
