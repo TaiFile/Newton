@@ -7,7 +7,7 @@ public class FrutaScript : MonoBehaviour
 {
     public float deadzone;
     public Rigidbody2D Rigidbody;
-    public float TaxaDeAceleracao = 0.25f;
+    public float TaxaDeAceleracao = 0.1f;
     public float GravCenaFinal;
     private Pilha pilha;
 
@@ -32,13 +32,6 @@ public class FrutaScript : MonoBehaviour
             Destroy(gameObject);
         }
 
-        if (pilha.GetCountNode() != 0)
-        {
-            Rigidbody.gravityScale = 1f + pilha.GetCountNode() * TaxaDeAceleracao;
-        }
-        else
-        {
-            Rigidbody.gravityScale = 1f;
-        }
+        Rigidbody.gravityScale = 1f + pilha.GetCountNode() * TaxaDeAceleracao;
     }
 }
