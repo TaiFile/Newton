@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BotaoCompareScript : MonoBehaviour
 {
@@ -24,6 +25,7 @@ public class BotaoCompareScript : MonoBehaviour
             {
                 spawner.pilhasIguais = true;
                 Debug.Log("Compare: Sao iguais");
+                SceneManager.LoadScene("CenaFinal");
             }
             else
             {
