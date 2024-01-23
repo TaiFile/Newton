@@ -104,7 +104,7 @@ public class Pilha : MonoBehaviour
         
         while (nodep1 != null) 
         {
-            if (nodep2.Info != nodep1.Info)
+            if (nodep2.Info.tag != nodep1.Info.tag)
             {
                 Debug.Log("returno diferente NodeInfo");
                 return false;
