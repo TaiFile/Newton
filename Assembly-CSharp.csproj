@@ -76,7 +76,6 @@
     <Compile Include="Assets\Script\BotaoCompareScript.cs" />
     <Compile Include="Assets\Script\FrutaSpawnerCode.cs" />
     <Compile Include="Assets\Script\TILevelManagment.cs" />
-    <Compile Include="Assets\Script\MelanciaScript.cs" />
     <Compile Include="Assets\Script\BotaoDestroiPIlhaScript.cs" />
     <Compile Include="Assets\Script\CenaFinalFrutaScript.cs" />
     <Compile Include="Assets\Script\PilhaProntaScript.cs" />

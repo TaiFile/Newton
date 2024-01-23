@@ -26,6 +26,15 @@ TagManager:
   - pilhaAtual
   - pilhaPronta
   - spawner
+  - Fbanana
+  - FMorango
+  - FAbacaxi
+  - FPera
+  - FUva
+  - FPessego
+  - FMelancia
+  - FLimao
+  - FMaca
   layers:
   - Default
   - TransparentFX

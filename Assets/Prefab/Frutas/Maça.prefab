@@ -29,8 +29,8 @@ Transform:
   m_GameObject: {fileID: 7614602173478860225}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.483, y: 2.547, z: 0}
-  m_LocalScale: {x: 0.058272026, y: 0.068097614, z: 0.068097614}
+  m_LocalPosition: {x: -5.512, y: 2.627, z: 0}
+  m_LocalScale: {x: 0.0675431, y: 0.07893195, z: 0.07893195}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -164,4 +164,4 @@ MonoBehaviour:
   deadzone: -8
   Rigidbody: {fileID: 0}
   TaxaDeAceleracao: 0.1
-  GravCenaFinalMaca: 0
+  GravCenaFinal: 0

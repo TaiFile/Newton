@@ -96,14 +96,17 @@ public class Pilha : MonoBehaviour
     {
         if (countNode != comparada.countNode)
         {
-            return false;
+            Debug.Log("returno diferente countNode");
+            return false; 
         }
         Node nodep1 = topo;
         Node nodep2 = comparada.topo;
-        while (nodep1 != null)
+        
+        while (nodep1 != null) 
         {
             if (nodep2.Info != nodep1.Info)
             {
+                Debug.Log("returno diferente NodeInfo");
                 return false;
             }
             nodep1 = nodep1.Next;

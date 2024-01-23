@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.485, y: 2.471, z: 0}
-  m_LocalScale: {x: 0.18419686, y: 0.18079862, z: 0.068097614}
+  m_LocalScale: {x: 0.2244363, y: 0.22029568, z: 0.08297414}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -164,4 +164,4 @@ MonoBehaviour:
   deadzone: -8
   Rigidbody: {fileID: 0}
   TaxaDeAceleracao: 0.1
-  GravCenaFinalMaca: 0
+  GravCenaFinal: 0

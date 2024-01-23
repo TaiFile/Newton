@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 2310519781509748033}
   - component: {fileID: 3042874651316947730}
   - component: {fileID: 4293626930836213791}
-  - component: {fileID: -3096444794387788983}
+  - component: {fileID: 228955676732986024}
   m_Layer: 0
   m_Name: Limao 1
-  m_TagString: Limao
+  m_TagString: FLimao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,13 +28,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7614602173478860225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.497, y: 2.461, z: 0}
-  m_LocalScale: {x: 0.39819437, y: 0.48183155, z: 0.068097614}
+  m_LocalRotation: {x: -0, y: -0, z: 0.06954884, w: 0.99757856}
+  m_LocalPosition: {x: -5.509, y: 2.645, z: 0}
+  m_LocalScale: {x: 0.394592, y: 0.47747254, z: 0.06748154}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 7.976}
 --- !u!212 &2310519781509748033
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -149,7 +149,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &-3096444794387788983
+--- !u!114 &228955676732986024
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -158,10 +158,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 7614602173478860225}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd2930bf9026fb45a22c32e107699ab, type: 3}
+  m_Script: {fileID: 11500000, guid: fe25fc4354bab214e95f0cbe82f40be4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deadzone: -8
-  Rigidbody: {fileID: 0}
-  TaxaDeAceleracao: 0.1
-  GravCenaFinalMaca: 0
+  cf_deadzone: -8
+  cf_Rigidbody: {fileID: 0}
