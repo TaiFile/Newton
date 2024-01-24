@@ -25,7 +25,7 @@ public class BotaoCompareScript : MonoBehaviour
             {
                 spawner.pilhasIguais = true;
                 Debug.Log("Compare: Sao iguais");
-                SceneManager.LoadScene("CenaFinal");
+                SceneManager.LoadScene("Explicação");
             }
             else
             {
