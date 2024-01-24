@@ -60,7 +60,7 @@ public class Pilha : MonoBehaviour
             ok = true;
 
             // Print de verificação em console
-            Debug.Log("Empilhou Elemento!!!");
+            //Debug.Log("Empilhou Elemento!!!");
         }
     }
 
@@ -73,7 +73,7 @@ public class Pilha : MonoBehaviour
             DeuCerto = false;
 
             // Print de verificação em console
-            Debug.Log("Pilha Vazia!!!");
+            //Debug.Log("Pilha Vazia!!!");
         }
         else
         {
@@ -88,7 +88,7 @@ public class Pilha : MonoBehaviour
             DeuCerto = true;
 
             // Print de verificação em console
-            Debug.Log("Desempilhou!!!");
+            //Debug.Log("Desempilhou!!!");
         }
     }
 

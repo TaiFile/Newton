@@ -2443,7 +2443,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 8.36
+  orthographic size: 8.07
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -3003,7 +3003,7 @@ AudioSource:
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
-  Mute: 0
+  Mute: 1
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128

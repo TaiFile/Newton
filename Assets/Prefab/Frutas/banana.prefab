@@ -165,3 +165,4 @@ MonoBehaviour:
   Rigidbody: {fileID: 0}
   TaxaDeAceleracao: 1
   GravCenaFinal: 0
+  objEs: {fileID: 7614602173478860225, guid: f86a5cd26f29da64597f0b3219f71f6d, type: 3}
