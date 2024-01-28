@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class FrutaScript : MonoBehaviour
 {
-    public float deadzone;
+    public float deadzone = -1;
     public Rigidbody2D Rigidbody;
     public float TaxaDeAceleracao = 0.1f;
     public float GravCenaFinal;

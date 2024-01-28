@@ -161,7 +161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dd2930bf9026fb45a22c32e107699ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deadzone: -8
+  deadzone: -15
   Rigidbody: {fileID: 4293626930836213791}
   TaxaDeAceleracao: 1
   GravCenaFinal: 0

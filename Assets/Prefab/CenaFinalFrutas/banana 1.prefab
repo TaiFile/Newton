@@ -161,5 +161,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe25fc4354bab214e95f0cbe82f40be4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cf_deadzone: -8
+  cf_deadzone: -15
   cf_Rigidbody: {fileID: 0}
+  cf_TaxaDeAceleracao: 0.1
