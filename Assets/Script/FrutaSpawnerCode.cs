@@ -17,9 +17,9 @@ public class MacaSpawnerCode : MonoBehaviour
 
 
     public bool pilhasIguais = false;
-    public float delayDeSpawn = 1;
+    public double delayDeSpawn = 0.8;
     private float timer;
-    public float speed = 3010;
+    public float speed = 1000;
     public float maxEsq = -8;
     public float maxDir = 11;
 
@@ -48,7 +48,7 @@ public class MacaSpawnerCode : MonoBehaviour
         int num_randon = Random.Range(0,8);
 
         if(num_randon == 0){
-            fruta_escolhida = maca;
+            fruta_escolhida = Pera;
         }
         else if(num_randon == 1){
             fruta_escolhida = abacaxi;
@@ -72,7 +72,7 @@ public class MacaSpawnerCode : MonoBehaviour
             fruta_escolhida = Morango;
         }
         else{
-            fruta_escolhida = Pera;
+            fruta_escolhida = maca;
         }
         return fruta_escolhida;
     }

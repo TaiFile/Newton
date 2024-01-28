@@ -15,9 +15,9 @@ public class SpawnerFinal : MonoBehaviour
     public GameObject Limao1;
     public GameObject Banana1;
 
-    public float cf_taxaDeSpawn = 1;
+    public double cf_taxaDeSpawn = 0.5;
     private float cf_timer;
-    public float cf_speed = 3001;
+    public float cf_speed = 1000;
     public float cf_maxEsq = -8;
     public float cf_maxDir = 11;
 
@@ -46,19 +46,19 @@ public class SpawnerFinal : MonoBehaviour
         int cf_num_randon = Random.Range(0,8);
 
         if(cf_num_randon == 0){
-            cf_fruta_escolhida = maca1;
+            cf_fruta_escolhida = Pera1;
         }
         else if(cf_num_randon == 1){
             cf_fruta_escolhida = abacaxi1;
         }
         else if(cf_num_randon == 2){
-            cf_fruta_escolhida = Melancia1;
+            cf_fruta_escolhida = Pessego1;
         }
         else if(cf_num_randon == 3){
-            cf_fruta_escolhida = Uva1;
+            cf_fruta_escolhida = maca1;
         }
         else if(cf_num_randon == 4){
-            cf_fruta_escolhida = Pessego1;
+            cf_fruta_escolhida = Melancia1;
         }
         else if(cf_num_randon == 5){
             cf_fruta_escolhida = Banana1;
@@ -70,7 +70,7 @@ public class SpawnerFinal : MonoBehaviour
             cf_fruta_escolhida = Morango1;
         }
         else{
-            cf_fruta_escolhida = Pera1;
+            cf_fruta_escolhida = Uva1;
         }
         return cf_fruta_escolhida;
     }

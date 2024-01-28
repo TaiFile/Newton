@@ -1136,20 +1136,22 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Esse jogo tem a finalidade de concluir o (meme) da ma\xE7\xE3 do Newton,
-    onde a ma\xE7\xE3 cai na cabe\xE7a do Newton e a partir da\xED conseguiu contribuir
-    significamente com o desenvolvimento de v\xE1rias inven\xE7\xF5es.\n\nO jogo
-    funcionar\xE1 da seguinte forma:\n. Voc\xEA comtrolar\xE1 Newton\n.  Haver\xE1
-    uma pilha de frutas na parte superior esquerda\n.  Haver\xE1 uma pilha com as
-    frutas que voc\xEA coletar na parte superior direta\n. Haver\xE1 um bot\xE3o
-    na esquerda que servir\xE1 para comparar a pilha de frutas desejadas e a pilha
-    de frutas que voc\xEA pegou\n. Haver\xE1 um bot\xE3o na direita, no qual servir\xE1
-    para desempilhar as frutas que voc\xEA havia pegado\n\nObjetivo:\nSeu objetivo
-    ser\xE1 pegar exatamente na ordem as frutas que o jogo escolher e ao pega-las
-    todas voc\xEA dever\xE1 ir no bot\xE3o para comparar a sua pilha de fruta e a
-    pilha da fruta escolhida. Caso, voc\xEA pegue alguma fruta errada por engano
-    voc\xEA dever\xE1 desempilhar suas frutas e recome\xE7ar a pega-las novamente
-    para concluir o desafio\n"
+  m_text: "Este jogo tem como prop\xF3sito recriar uma narrativa c\xF4mica do passado,
+    na qual teoricamente uma ma\xE7\xE3 cairia na cabe\xE7a de Newton, levando-o
+    a descobrir a gravidade a partir desse evento.\r\n\r\nNo momento presente, Newton
+    encontra-se profundamente adormecido sob uma \xE1rvore, imerso em um sono pesado,
+    sonhando com uma realidade alternativa. Sua miss\xE3o \xE9 ajud\xE1-lo a despertar
+    desse pesadelo!\r\n\r\nAs mec\xE2nicas do jogo s\xE3o as seguintes:\r\n. Voc\xEA
+    ter\xE1 controle sobre Newton utilizando as teclas de seta do teclado.\r\n. Uma
+    pilha de frutas estar\xE1 dispon\xEDvel no canto superior esquerdo, e seu objetivo
+    \xE9 organizar a pilha correspondente do lado direito seguindo a mesma sequ\xEAncia.\r\n.
+    Dois bot\xF5es est\xE3o dispon\xEDveis: o bot\xE3o verde \xE0 esquerda \xE9 usado
+    para comparar as duas pilhas. Se ambas forem id\xEAnticas, voc\xEA avan\xE7ar\xE1
+    para a pr\xF3xima fase, sendo esta a \xFAnica maneira de progredir no jogo. J\xE1
+    o bot\xE3o vermelho \xE0 direita desfaz completamente a pilha da direita, uma
+    fun\xE7\xE3o poderosa e \xFAtil!\r\n\r\nDesafie-se e ajude Newton a despertar
+    desse sono profundo, garantindo que as pilhas estejam alinhadas para avan\xE7ar
+    para as pr\xF3ximas fases!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1212,7 +1214,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -980.9883, y: -448.18863, z: -670.16235, w: -381.04965}
+  m_margin: {x: -980.9883, y: -466.20227, z: -670.16235, w: -381.04965}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

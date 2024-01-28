@@ -1089,20 +1089,21 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\r\nDesafio Final: A Ma\xE7\xE3 de Newton\r\n\r\nParab\xE9ns, jogador!
-    Chegar at\xE9 aqui \xE9 uma conquista e tanto. Agora, o desafio derradeiro aguarda
-    voc\xEA: capturar a ma\xE7\xE3 que cair\xE1 da \xE1rvore, mas com um detalhe
-    crucial. Newton, nosso personagem, \xE9 extremamente exigente e aceitar\xE1 apenas
-    a ma\xE7\xE3. Qualquer outra fruta capturada resultar\xE1 no rein\xEDcio autom\xE1tico
-    do jogo, obrigando-o a percorrer novamente toda a jornada at\xE9 este ponto.\r\n\r\nA
-    concentra\xE7\xE3o \xE9 a chave! A ma\xE7\xE3 dourada \xE9 o \xFAnico objetivo
-    v\xE1lido. Capture-a com destreza, ignorando as tenta\xE7\xF5es das outras frutas.
-    Se alcan\xE7ar sucesso, completar\xE1 o desafio final e encerrar\xE1 o meme de
-    Newton com gl\xF3ria. Boa sorte, jogador! Que sua precis\xE3o e habilidade guiem
-    voc\xEA at\xE9 a vit\xF3ria! seja a ma\xE7\xE3, o jogo ser\xE1 automaticamente
-    reincializado e voc\xEA ter\xE1 que refazer todo o jogo para chegar neste est\xE1gio.\nCaso,
-    voc\xEA pegue a ma\xE7\xE3 enquanto evita as outras frutas, voc\xEA concluir\xE1
-    o meme de Newton.\nDesejo muita sorte ao jogador!!"
+  m_text: "Desafio Final: A Ma\xE7\xE3 de Newton\r\n\r\nParab\xE9ns, jogador! Chegar
+    at\xE9 este ponto \xE9, sem d\xFAvida, uma realiza\xE7\xE3o not\xE1vel. Agora,
+    um desafio supremo aguarda por voc\xEA: capturar a ma\xE7\xE3 prestes a cair
+    da \xE1rvore! Contudo, h\xE1 uma condi\xE7\xE3o crucial. Newton, nosso personagem
+    exigente, aceitar\xE1 somente a ma\xE7\xE3 como captura v\xE1lida. Qualquer outra
+    fruta colhida resultar\xE1 automaticamente no decl\xEDnio do conhecimento f\xEDsico
+    atual, e \xE9 sua responsabilidade preservar a linha hist\xF3rica conhecida!\r\n\r\nA
+    concentra\xE7\xE3o \xE9 a chave! A ma\xE7\xE3 \xE9 o \xFAnico alvo aceit\xE1vel.
+    Capture-a com destreza, resistindo \xE0s tenta\xE7\xF5es das outras frutas. Se
+    for bem-sucedido, completar\xE1 o desafio final e encerrar\xE1 a saga de Newton
+    com gl\xF3ria. Boa sorte, jogador! Que sua precis\xE3o e habilidade o conduzam
+    \xE0 vit\xF3ria! Caso, inadvertidamente, agarre qualquer outra fruta, ser\xE1
+    necess\xE1rio refazer toda a trajet\xF3ria para alcan\xE7ar este est\xE1gio.\r\n\r\nAo
+    conseguir apanhar a ma\xE7\xE3 enquanto evita as demais frutas, ter\xE1 conclu\xEDdo
+    com sucesso o conto de Newton. Que sua destreza o guie at\xE9 a vit\xF3ria!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

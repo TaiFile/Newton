@@ -741,8 +741,8 @@ MonoBehaviour:
   Limao: {fileID: 7614602173478860225, guid: 07010613977def945b5ab7f52cf89cd4, type: 3}
   Banana: {fileID: 7614602173478860225, guid: 1b60b1d22b0a4eb48af70f8c01e74b45, type: 3}
   pilhasIguais: 0
-  delayDeSpawn: 1
-  speed: 3001
+  delayDeSpawn: 0.8
+  speed: 1000
   maxEsq: -8
   maxDir: 11
 --- !u!4 &299385373
@@ -2071,11 +2071,11 @@ MonoBehaviour:
   p: {fileID: 0}
   um: {fileID: 7614602173478860225, guid: a9f66f9ae203f894a8c304990ea4a27e, type: 3}
   dois: {fileID: 7614602173478860225, guid: f86a5cd26f29da64597f0b3219f71f6d, type: 3}
-  tres: {fileID: 7614602173478860225, guid: 29849d0a6093b4447b16a554a45da80e, type: 3}
-  quatro: {fileID: 7614602173478860225, guid: f86a5cd26f29da64597f0b3219f71f6d, type: 3}
-  cinco: {fileID: 7614602173478860225, guid: 3ec2f380d8ba3dd4b849568aad0edb4f, type: 3}
-  seis: {fileID: 7614602173478860225, guid: aa5b693bc025b3e4cb24fb88a5fb7699, type: 3}
-  sete: {fileID: 7614602173478860225, guid: 2dda86478df86354e98c2a75e729eca0, type: 3}
+  tres: {fileID: 7614602173478860225, guid: 2dda86478df86354e98c2a75e729eca0, type: 3}
+  quatro: {fileID: 7614602173478860225, guid: 50dbc2f7188de0548a38f7c54f2fc08d, type: 3}
+  cinco: {fileID: 7614602173478860225, guid: aa5b693bc025b3e4cb24fb88a5fb7699, type: 3}
+  seis: {fileID: 7614602173478860225, guid: 29849d0a6093b4447b16a554a45da80e, type: 3}
+  sete: {fileID: 7614602173478860225, guid: 3ec2f380d8ba3dd4b849568aad0edb4f, type: 3}
   oito: {fileID: 7614602173478860225, guid: be77ee16c35ca62478a2c948b6d10d2d, type: 3}
 --- !u!114 &856040662
 MonoBehaviour:
@@ -2089,7 +2089,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad73ab5024096f14984c06f767c2ae83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tamanhoMaximo: 3
+  tamanhoMaximo: 7
   alturaNode: 1.5
 --- !u!4 &856040663
 Transform:

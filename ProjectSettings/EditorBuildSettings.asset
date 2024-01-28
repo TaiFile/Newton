@@ -23,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CenaFinal.unity
     guid: 2e2972a6cd927c14088771682b2647c0
+  - enabled: 1
+    path: Assets/Scenes/Win_Video.unity
+    guid: dc37b49a2d0aee54dbbd9bc4267a6d18
+  - enabled: 1
+    path: Assets/Scenes/Defeat_Video.unity
+    guid: ba5be500f1071df479c7b05f1045a766
   m_configObjects: {}
