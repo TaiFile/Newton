@@ -526,7 +526,7 @@ MonoBehaviour:
   Pessego1: {fileID: 7614602173478860225, guid: 79c594664decd7e49896ccec6f232351, type: 3}
   Limao1: {fileID: 7614602173478860225, guid: 9f94ed45e8e11ab44941639927b4b753, type: 3}
   Banana1: {fileID: 7614602173478860225, guid: 389afa94b23908f4fb015d2564de5af7, type: 3}
-  cf_taxaDeSpawn: 0.2
+  cf_taxaDeSpawn: 0.4
   cf_speed: 1000
   cf_maxEsq: -8
   cf_maxDir: 11
