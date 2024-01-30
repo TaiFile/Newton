@@ -7,7 +7,7 @@ public class FrutaScript : MonoBehaviour
 {
     public float deadzone = -1;
     public Rigidbody2D Rigidbody;
-    public float TaxaDeAceleracao = 0.1f;
+    public float TaxaDeAceleracao = 0.07f;
     public float GravCenaFinal;
     private Pilha pilha;
     public GameObject objEs;

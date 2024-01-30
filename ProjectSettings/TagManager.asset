@@ -35,6 +35,7 @@ TagManager:
   - FMelancia
   - FLimao
   - FMaca
+  - FinalNewton
   layers:
   - Default
   - TransparentFX

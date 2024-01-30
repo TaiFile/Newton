@@ -526,7 +526,7 @@ MonoBehaviour:
   Pessego1: {fileID: 7614602173478860225, guid: 79c594664decd7e49896ccec6f232351, type: 3}
   Limao1: {fileID: 7614602173478860225, guid: 9f94ed45e8e11ab44941639927b4b753, type: 3}
   Banana1: {fileID: 7614602173478860225, guid: 389afa94b23908f4fb015d2564de5af7, type: 3}
-  cf_taxaDeSpawn: 0.4
+  cf_taxaDeSpawn: 0.3
   cf_speed: 1000
   cf_maxEsq: -8
   cf_maxDir: 11
@@ -1030,7 +1030,7 @@ GameObject:
   - component: {fileID: 751509770}
   m_Layer: 0
   m_Name: Newton
-  m_TagString: Player
+  m_TagString: FinalNewton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1176,11 +1176,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 909b7389846ff7a41a65cd8efe5363bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input: 0
   speed: 1000
   rbb: {fileID: 751509766}
   cll: {fileID: 751509769}
-  win: 0
 --- !u!1 &786368836
 GameObject:
   m_ObjectHideFlags: 0

@@ -46,31 +46,31 @@ public class SpawnerFinal : MonoBehaviour
         int cf_num_randon = Random.Range(0,8);
 
         if(cf_num_randon == 0){
-            cf_fruta_escolhida = Pera1;
+            cf_fruta_escolhida = Melancia1;
         }
         else if(cf_num_randon == 1){
-            cf_fruta_escolhida = abacaxi1;
+            cf_fruta_escolhida = Limao1;
         }
         else if(cf_num_randon == 2){
-            cf_fruta_escolhida = Pessego1;
+            cf_fruta_escolhida = abacaxi1;
         }
         else if(cf_num_randon == 3){
             cf_fruta_escolhida = maca1;
         }
         else if(cf_num_randon == 4){
-            cf_fruta_escolhida = Melancia1;
+            cf_fruta_escolhida = Pera1;
         }
         else if(cf_num_randon == 5){
             cf_fruta_escolhida = Banana1;
         }
         else if(cf_num_randon == 6){
-            cf_fruta_escolhida = Limao1;
+            cf_fruta_escolhida = Uva1;
         }
         else if(cf_num_randon == 7){
             cf_fruta_escolhida = Morango1;
         }
         else{
-            cf_fruta_escolhida = Uva1;
+            cf_fruta_escolhida = Pessego1;
         }
         return cf_fruta_escolhida;
     }

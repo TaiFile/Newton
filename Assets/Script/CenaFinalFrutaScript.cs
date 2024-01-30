@@ -8,6 +8,7 @@ public class cf_FrutaScript : MonoBehaviour
     public float cf_deadzone;
     public Rigidbody2D cf_Rigidbody;
     public float cf_TaxaDeAceleracao = 0.1f;
+    public bool win;
 
     // Start is called before the first frame update
     void Start()
@@ -23,5 +24,31 @@ public class cf_FrutaScript : MonoBehaviour
             Destroy(gameObject);
         }
         cf_Rigidbody.gravityScale = 1f + 20 * cf_TaxaDeAceleracao;
+    }
+
+    private void OnCollisionEnter2D(Collision2D test)
+    {
+        if (test.gameObject.CompareTag("FinalNewton"))
+        {
+            if (gameObject.CompareTag("FMaca"))
+            {
+                Debug.Log("Pegou maca");
+                win = true;
+            }
+            else
+            {
+                Debug.Log("Pegou outra fruta");
+                win = false;
+            }
+
+            if (win)
+            {
+                SceneManager.LoadScene("Win_Video");
+            }
+            else
+            {
+                SceneManager.LoadScene("Defeat_Video");
+            }
+        }
     }
 }

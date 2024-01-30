@@ -48,28 +48,28 @@ public class MacaSpawnerCode : MonoBehaviour
         int num_randon = Random.Range(0,8);
 
         if(num_randon == 0){
-            fruta_escolhida = Pera;
+            fruta_escolhida = Morango;
         }
         else if(num_randon == 1){
-            fruta_escolhida = abacaxi;
-        }
-        else if(num_randon == 2){
-            fruta_escolhida = Melancia;
-        }
-        else if(num_randon == 3){
-            fruta_escolhida = Uva;
-        }
-        else if(num_randon == 4){
-            fruta_escolhida = Pessego;
-        }
-        else if(num_randon == 5){
             fruta_escolhida = Banana;
         }
-        else if(num_randon == 6){
+        else if(num_randon == 2){
+            fruta_escolhida = Pera;
+        }
+        else if(num_randon == 3){
+            fruta_escolhida = Pessego;
+        }
+        else if(num_randon == 4){
+            fruta_escolhida = Uva;
+        }
+        else if(num_randon == 5){
             fruta_escolhida = Limao;
         }
+        else if(num_randon == 6){
+            fruta_escolhida = abacaxi;
+        }
         else if(num_randon == 7){
-            fruta_escolhida = Morango;
+            fruta_escolhida = Melancia;
         }
         else{
             fruta_escolhida = maca;
